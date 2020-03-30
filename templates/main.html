@@ -1,0 +1,10 @@
+<h1>Welcome to the Flask Demo</h1>
+<form method="POST" action="/">
+<input name="text" value="{{ msg }}">
+<input type="submit" value="Echo">
+</form>
+{% if msg %}
+You typed in: <b>{{ msg }}</b>
+{% endif %}
+<hr>
+Copyright Gabor Szabo at <a href="https://code-maven.com/">Code Maven</a>
