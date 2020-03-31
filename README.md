@@ -3,7 +3,16 @@
 Application to showcase deploying a simple web application in the cloud
 
 
-### Linux / Mac
+## Windows
+
+```
+pip install requirements.txt
+set FLASK_APP=app
+set FLASK_DEBUG=1
+flask run --port 5000
+```
+
+## Linux / Mac
 
 ```
 virtualenv -p python3 venv
@@ -12,12 +21,10 @@ pip install requirements.txt
 FLASK_APP=app FLASK_DEBUG=1 flask run --port 5000
 ```
 
-### Windows
+
+## On the server to check the app:
 
 ```
-pip install requirements.txt
-set FLASK_APP=app
-set FLASK_DEBUG=1
-flask run --port 5000
+FLASK_APP=app FLASK_DEBUG=1 flask run --port 5000 --host 0.0.0.0
 ```
 
