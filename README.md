@@ -8,14 +8,16 @@ Application to showcase deploying a simple web application in the cloud
 ```
 virtualenv -p python3 venv
 source venv/bin/activate
-pip install requirements.txt
+pip install -r requiremets.txt
+pytest -svv
 FLASK_APP=app FLASK_DEBUG=1 flask run --port 5000
 ```
 
 ### Windows
 
 ```
-pip install requirements.txt
+pip install -r requiremets.txt
+pytest -svv
 set FLASK_APP=app
 set FLASK_DEBUG=1
 flask run --port 5000
